@@ -2,21 +2,8 @@
 <details>
 	<summary>Task 1 and 2  </summary>
 	
-# Day 0 - Tools Installation
-We start by modeling the entire RISC-V processor using C code. This C model acts as a high-level specification of how the processor should behave. We compile and run applications on this model using tools like RISC-V GCC to make sure it works correctly.
-Once we're confident the C model is accurate, we move on to writing the actual hardware description in Verilog. The Verilog code for the processor only contains what is part of the processor’s instruction set and core logic. Peripherals and other modules (called IP blocks) are kept separate and reused as needed.
-These IP blocks can include analog components, macros, or gate-level netlists that are proven and ready to use. By integrating the processor core with these peripherals and IP blocks, we create the full System on Chip (SoC).
-Finally, to ensure everything works as expected, we run the same applications on the Verilog hardware model and check that the output matches the behavior of the C specification model.
-Key Differences Between Microcontroller and Microprocessor
-Microcontroller: A complete system on one chip, including CPU, memory, and peripherals. Used for embedded, specific tasks. Low cost and power-efficient.
-Microprocessor: Only the CPU core; needs external memory and peripherals to work. More powerful and flexible, used in PCs and complex systems.
-
-All concept explained using green block.Work only on the blue block .
-RTL are converted into gates which are properly placed and routed using and an or gate ff etc. No more if statement - basically only metal layers - it has only transitors.
-it makes a gds2 file . It has the information for the fabricator to to make the design. This gos thru various checks(DRC LVS). Then sent to factory (tape out).
-Factory gives back made chips (tape in). Then we connect all the pheripherals and transfer data onto the chip to program it. It gives output O4 and we make sure O1=O2=O3=O4.
-This all takes 14 Months due to tests and production. Our processors 100Mhz to 130Mhz. 
-OG Arduino used risc 5 chip
+# Day 0 
+We start by creating a high-level model of the entire RISC-V processor using C code, which acts as a clear specification of how the processor should behave. Using tools like RISC-V GCC, we compile and run applications on this model to verify that it works correctly. Once we are confident that the C model accurately represents the processor, we transition to writing the actual hardware description in Verilog. This Verilog code includes only the processor’s core logic and instruction set, while peripherals and other modules—called IP blocks—are kept separate and reused as needed. These IP blocks may include analog components, pre-designed macros, or gate-level netlists that have already been proven and validated. By integrating the processor core with these peripherals and IP blocks, we build a complete System on Chip (SoC). To ensure everything functions as expected, we run the same applications on the Verilog hardware model and check that its output matches the behavior of the original C specification. It’s important to note the key difference between microcontrollers and microprocessors: microcontrollers are complete systems on a single chip, including CPU, memory, and peripherals, optimized for embedded, specific tasks with low cost and power consumption; microprocessors, on the other hand, consist only of the CPU core and require external memory and peripherals, making them more powerful and flexible for complex systems like PCs. After the Verilog RTL is finalized, it’s converted into gate-level logic—made up of AND, OR gates, flip-flops, and transistors—without any high-level constructs like if-statements. This stage involves placing and routing these gates to create a physical layout, which is saved in a GDSII file. The GDSII file contains the necessary information for the chip fabricator to manufacture the design. Before sending to the factory (a step called “tape-out”), the design undergoes strict checks such as Design Rule Checks (DRC) and Layout Versus Schematic (LVS). Once the chips are produced (“tape-in”), they are connected to peripherals and programmed. We verify that the output from the physical chip matches the expected outputs from previous stages, ensuring consistency. The entire process typically takes about 14 months due to testing and production cycles, and our processors usually run at speeds between 100 MHz and 130 MHz. Interestingly, the original Arduino boards used a RISC-V chip as well.
 
 
 ## Yosys
