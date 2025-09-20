@@ -10,11 +10,38 @@
 
 ## Iverilog
 
-<img width="702" alt="iverilog" src="">
+<img width="702" alt="iverilog" src="Screenshot from 2025-09-20 21-03-36.png">
+<img width="702" alt="iverilog" src="Screenshot from 2025-09-20 21-04-25.png">
+
+## NGSpice
+
+<img width="702" alt="iverilog" src="Screenshot from 2025-09-20 21-22-51.png">
 
 ## GTKWave
 
 <img width="604" alt="gtkwave2" src="">
 
 <img width="1008" alt="gtkwave1" src="">
+
+## Magic
+
+<img width="604" alt="gtkwave2" src="Screenshot from 2025-09-20 21-29-20.png">
+
+<img width="1008" alt="gtkwave1" src="Screenshot from 2025-09-20 21-29-53.png">
+<img width="1008" alt="gtkwave1" src="Screenshot from 2025-09-20 21-29-56.png">
+
+
+## Open Lane
+
+# Dependencies 
+
+<img width="604" alt="gtkwave2" src="Screenshot from 2025-09-20 21-35-18.png">
+<img width="1008" alt="gtkwave1" src="Screenshot from 2025-09-20 21-36-25.png">
+<img width="1008" alt="gtkwave1" src="Screenshot from 2025-09-20 21-36-34.png">
+
+# PDK Tools
+
+<img width="604" alt="gtkwave2" src="Screenshot from 2025-09-20 22-49-43.png">
+
+<img width="1008" alt="gtkwave1" src="Screenshot from 2025-09-20 22-49-52.png">
 </details>
