@@ -30,15 +30,15 @@
 <img width="1008" alt="gtkwave1" src="Photos/Screenshot from 2025-09-20 21-29-56.png">
 
 
-## Open Lane
+# Open Lane
 
-# Dependencies 
+## Dependencies 
 
 <img width="604" alt="gtkwave2" src="Photos/Screenshot from 2025-09-20 21-35-18.png">
 <img width="1008" alt="gtkwave1" src="Photos/Screenshot from 2025-09-20 21-36-25.png">
 <img width="1008" alt="gtkwave1" src="Photos/Screenshot from 2025-09-20 21-36-34.png">
 
-# PDK Tools
+## PDK Tools
 
 <img width="604" alt="gtkwave2" src="Photos/Screenshot from 2025-09-20 22-49-43.png">
 
